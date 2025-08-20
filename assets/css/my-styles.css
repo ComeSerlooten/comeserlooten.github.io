@@ -1,0 +1,487 @@
+﻿@import url(main.css);
+
+
+.my-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 1px;
+    row-gap: 1px;
+    grid-auto-rows: 200px;
+    background-color: rgba(100, 100, 100, .75);
+    padding: 25px;
+    border-radius: 25px;
+    column-rule: dashed;
+}
+
+.my-grid > .my-grid-item {
+    background-color: white;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+.my-header {
+    height: 50px;
+    background-color: var(--site-headers-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+}
+
+.my-footer {
+    height: auto;
+    background-color: var(--site-headers-color);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    padding: 5px 0;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.basic-element {
+
+}
+
+.my-marker {
+    
+}
+
+.my-wrapper {
+
+}
+
+.my-section {
+    padding: 25px;
+    width: 100%
+}
+
+.my-spacer {
+}
+
+.my-title {
+    color: var(--font-pale-blue)
+}
+
+a > .my-title:hover {
+    border-bottom-color: transparent;
+    color: var(--hover-color) !important; /* hyperlink color on hover */
+}
+
+a > .my-title {
+    -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+}
+
+.my-panel {
+    background-color: var(--panel-background-color);
+    border-radius: 25px;
+    /*margin-top: 25px;
+    margin-bottom:25px;*/
+}
+
+.my-article-image-area {
+    width: 100%;
+    max-height: 400px;
+    display: block;
+    align-content: center;
+    text-align: center;
+}
+
+.my-article-image-area > .my-image {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.my-article-image-area p {
+    color: var(--hover-color-deep-dark);
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.my-article-section {
+    margin: 0 0 1em 0;
+    border-radius: 10px;
+    background-color: var(--panel-background-color);
+    padding: 15px;
+}
+
+/*===*/
+/*greffes*/
+
+::placeholder {
+    color: var(--font-light-gray)
+}
+
+
+/*===*/
+
+/* tooltip import */
+.my-tooltip {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Tooltip text */
+.my-tooltip .my-tooltip-text {
+    visibility: hidden;
+    width: auto;
+    height: 20px;
+    background-color: white;
+    padding: 0;
+    color: #000;
+    text-align: left;
+    top: 0;
+    left: calc(100% + 25px);
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.my-tooltip:hover .my-tooltip-text {
+    visibility: visible;
+}
+
+
+/* tiles adjusting*/
+.my-tiles article > .image{
+    display: block;
+    height: 100%;
+}
+
+.my-tiles article > .image > .preview {
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    background-color: #ffffffff;
+    filter: brightness(.5) blur(1px) 
+}
+
+.my-tiles article > .image > .showcase {
+    filter: brightness(.25)
+}
+
+.my-tiles article > .image > .preview:after {
+    position: relative;
+    opacity: 100%;
+    z-index: -5;
+}
+
+.my-tiles article > .image > .preview:before {
+    position: relative;
+    opacity: 0;
+    z-index: -5;
+}
+
+.my-tiles article > .image > .showcase:after {
+    position: relative;
+    opacity: 100%;
+    z-index: 1;
+}
+
+.my-tiles article > .image > .showcase:before {
+    position: relative;
+    opacity: 100%;
+    z-index: 1;
+}
+
+
+
+body:not(.is-touch) .my-tiles article:hover > .image > .preview {
+    z-index: -5;
+}
+
+.my-tiles article.quarter {
+    width: calc(25% - 2em);
+}
+
+/* imports */
+
+/*Tiles copy to My */
+
+.my-tiles {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    postiion: relative;
+    margin: -.5em;
+}
+
+.my-tiles article {
+    -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: relative;
+    width: calc(33.33333% - 2em);
+    margin: 1em 1em 1em 1em;
+}
+
+.my-tiles article > .image {
+    -moz-transition: -moz-transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+
+.my-tiles article > .image > .showcase {
+    display: block;
+    /*width: 100%;*/
+}
+
+.my-tiles article > .image:before {
+    pointer-events: none;
+    -moz-transition: background-color 0.5s ease, opacity 0.5s ease;
+    -webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
+    -ms-transition: background-color 0.5s ease, opacity 0.5s ease;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1.0;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.my-tiles article > .image:after {
+    pointer-events: none;
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
+    */
+    /* ^ cross over images */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.25;
+    z-index: 2;
+}
+
+.my-tiles article > a {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -moz-transition: background-color 0.5s ease, -moz-transform 0.5s ease;
+    -webkit-transition: background-color 0.5s ease, -webkit-transform 0.5s ease;
+    -ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    border-radius: 4px;
+    border-bottom: 0;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    z-index: 3;
+}
+
+.my-tiles article > a > :last-child {
+    margin: 0;
+}
+
+.my-tiles article > a:hover {
+    color: #ffffff !important;
+}
+
+.my-tiles article > a h2 {
+    margin: 0;
+}
+
+.my-tiles article > a .content {
+    -moz-transition: max-height 0.5s ease, opacity 0.5s ease;
+    -webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
+    -ms-transition: max-height 0.5s ease, opacity 0.5s ease;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    width: 100%;
+    max-height: 0;
+    line-height: 1.5;
+    margin-top: 0.35em;
+    opacity: 0;
+}
+
+.my-tiles article > a .content > :last-child {
+    margin-bottom: 0;
+}
+
+.my-tiles article.style1 > .image:before {
+    background-color: #f2849e;
+}
+
+.my-tiles article.style2 > .image:before {
+    background-color: #7ecaf6;
+}
+
+.my-tiles article.style3 > .image:before {
+    background-color: #7bd0c1;
+}
+
+.my-tiles article.style4 > .image:before {
+    background-color: #c75b9b;
+}
+
+.my-tiles article.style5 > .image:before {
+    background-color: #ae85ca;
+}
+
+.my-tiles article.style6 > .image:before {
+    background-color: #8499e7;
+}
+
+.my-tiles article.black > .image:before {
+    background-color: #000000;
+}
+
+body:not(.is-touch) .my-tiles article:hover > .image {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+body:not(.is-touch) .my-tiles article:hover > .image:before {
+    background-color: #333333;
+    opacity: 0.35;
+}
+
+body:not(.is-touch) .my-tiles article:hover > .image:after {
+    opacity: 0;
+}
+
+body:not(.is-touch) .my-tiles article:hover .content {
+    max-height: 15em;
+    opacity: 1;
+}
+
+* + .my-tiles {
+    margin-top: 2em;
+}
+
+body.is-preload .my-tiles article {
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+body.is-touch .my-tiles article .content {
+    max-height: 15em;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .my-tiles {
+        margin: -1.25em 0 0 -1.25em;
+    }
+
+    .my-tiles article {
+        width: calc(33.33333% - 1.25em);
+        margin: 1.25em 0 0 1.25em;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    .my-tiles {
+        margin: -2.5em 0 0 -2.5em;
+    }
+
+    .my-tiles article {
+        width: calc(50% - 2.5em);
+        margin: 2.5em 0 0 2.5em;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    .my-tiles {
+        margin: -1.25em 0 0 -1.25em;
+    }
+
+    .my-tiles article {
+        width: calc(50% - 1.25em);
+        margin: 1.25em 0 0 1.25em;
+    }
+
+    .my-tiles article:hover > .image {
+        -moz-transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .my-tiles {
+        margin: 0;
+    }
+
+    .my-tiles article {
+        width: 100%;
+        margin: 1.25em 0 0 0;
+    }
+
+}
