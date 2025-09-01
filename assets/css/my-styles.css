@@ -39,8 +39,9 @@
     z-index: 2000;
     padding: 5px 0;
     align-content: center;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: min(50%,max(30%, min-content)) auto min(50%,max(30%, auto));%
 }
 
 .basic-element {
@@ -89,7 +90,6 @@ a > .my-title {
 
 .my-article-image-area {
     width: 100%;
-    max-height: 400px;
     display: block;
     align-content: center;
     text-align: center;

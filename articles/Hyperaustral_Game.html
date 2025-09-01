@@ -1,0 +1,542 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+<head>
+  <title>Côme Serlooten - Hyperaustral</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+  <link rel="stylesheet" href="../assets/css/my-styles.css" />
+  <link rel="icon" type="image/x-icon" href="../images/Hyperaustral_Game/Miniplane.png">
+
+</head>
+
+<!-- Page Top and Bottom -->
+<div  class = "my-header">
+  <div style="text-align: left; height:100%;  display: flex; margin-left: 25px" >
+    <a href="../index.html" style="color: rgb(125,125,125); margin-top: auto; margin-bottom: auto;">Home</a>
+  </div>
+</div>
+<div class = "my-footer">
+  <div style="display: grid; margin-top: auto; margin-bottom: auto; padding: 0 1em; grid-template-rows: auto">
+    <ul class="icons" style="margin:0">
+      <li style="margin: 0 5px 0 5px ;padding: 0"><a href="https://www.facebook.com/profile.php?id=100006138917291" class="icon brands style2 fa-facebook-f fa-xs"><span class="label">Facebook</span></a></li>
+      <li style="margin: 0 5px ;padding: 0"><a href="https://www.instagram.com/comeserlooten/" class="icon brands style2 fa-instagram fa-xs"><span class="label">Instagram</span></a></li>
+      <li style="margin: 0 5px ;padding: 0"><a href="https://phyrocast.itch.io/" class="icon brands style2 fa-itch-io fa-xs"><span class="label">Itch.io</span></a></li>
+      <li style="margin: 0 5px ;padding: 0"><a href="https://github.com/ComeSerlooten/" class="icon brands style2 fa-github fa-xs"><span class="label">GitHub</span></a></li>
+      <li style="margin: 0 5px ;padding: 0"><a class="icon solid style2 fa-phone fa-xs">
+        <button onclick="CopyToClipboardPhone()" class="label">Phone</button>
+        <div class="my-tooltip">
+          <div class="my-tooltip-text" style="margin-top:-5px; height: 25px">
+            <p style="margin-top:-2px; height:25px">copy:+33695707553</p>
+          </div>
+        </div>
+      </a></li>
+      <li style="margin: 0 5px 0 5px ;padding: 0"><a class="icon solid style2 fa-envelope fa-xs">
+        <button onclick="CopyToClipboardEmail()" class="label">Email</button>
+        <div class="my-tooltip">
+          <div class="my-tooltip-text" style="margin-top:-5px; height: 25px">
+            <p style="margin-top:-2px; height:25px">copy:c.serloot@gmail.com</p>
+          </div>
+        </div>
+      </a></li>
+    </ul>
+  </div>
+  
+  <div style="text-align: right; width:30%; padding : 0 2em" >
+    <a href="#page-top" style="color: rgb(125,125,125)">Scroll to top</a>
+  </div>
+</div>
+
+<body class="is-preload">
+<!-- Wrapper -->
+<div class="my-wrapper" id="wrapper" style="box-sizing: border-box; 
+                                                    width: 100%; 
+                                                    height: auto; 
+                                                    background-color: var(--site-background-color)">
+
+  <!-- head fixed spacer -->
+  <div id="page-top" class="my-spacer" style="height: 50px"></div> <!-- head fixed spacer -->
+
+
+
+  <!-- Header Logo -->
+  <header id="header">
+    <div class="inner">
+
+      <!-- Logo -->
+      <a href="../index.html" class="logo">                <!--style="-webkit-filter: invert()"-->
+        <span class="symbol">
+                            <img src="../images/logo.svg" alt="">
+                        </span>
+        <span class="my-title">Côme Serlooten</span>
+      </a>
+
+      <!-- Nav -->
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Menu -->
+  <nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../generic.html">Spotlight Projects</a></li>
+      <li><a href="../generic.html">Games</a></li>
+      <li><a href="../generic.html">Fragments</a></li>
+      <li><a href="../generic.html">Others</a></li>
+      <li><a href="../generic.html">CV/Resume</a></li>
+      <li><a href="../generic.html">Contact</a></li>
+      <li><a href="../elements.html">Elements</a></li> <!-- To Hide -->
+    </ul>
+  </nav>
+
+  <!-- Main -->
+  <div id="main" style="overflow: hidden;">
+    <div class="inner">
+      <!-- Title -->
+      <h1 style="margin-left: 2.5em; ; margin-bottom: 5px; display: inline-block">Hyperaustral</h1>
+      <div class="my-image" style="height:2.5em; display: inline-block; margin-left: 1em">
+        <img src="../images/Hyperaustral_Game/Miniplane.png" alt="" />
+      </div> <!-- label icon -->
+      <p style="margin-left: 2.5em; margin-bottom: 25px;">An apocalypse airship management game - Student project</p>
+
+      <!-- Main Image -->
+      <div class="my-section" style="width:110%;
+                                                height: 500px; 
+                                                background-color: rgba(0,0,0,0.5); 
+                                                overflow: hidden; 
+                                                display: block; 
+                                                padding: 0;
+                                                margin: 0 -5% .5em -5%;
+                                                border-radius: 10px">
+        <div class="my-image" style="height: 100%; width:100%;
+                                                    display: block;                                
+                                                    margin-left: 50%">
+          <iframe width="100%" height="100%"
+                  src="https://www.youtube.com/embed/w5U2fBAAP3I"
+                  style="width:100%;
+                          transform: translateX(-50%);
+                          -webkit-transform: translateX(-50%);">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Title image -->
+      <div class="my-article-section">
+        <div class="my-article-image-area">
+                        <span class="my-image">
+                            <img src="../images/Hyperaustral_Game/Logo.png" alt="" style="width: 70%">
+                        </span>
+        </div>
+      </div>
+
+
+      <!-- Game id card -->
+      <div class="my-article-section">
+        <h2 class="section-title" style="margin-left: 1.5em; display: inline-block">Project ID Card:</h2>
+        <div class="my-article-section">
+          <ul style=" columns: 2;
+                                    -webkit-columns :2;
+                                    -moz-columns :2;
+                                    list-style: none; 
+                                    margin-bottom: 10px">
+            <li>
+              <div class="my-wrapper" style="columns: 2;
+                                    -webkit-columns :2;
+                                    -moz-columns :2;
+                                    padding-right: 5px;
+                                    padding-left: 5px;">
+                <p style="margin:0"><b><i>Project Type:</i></b></p>
+                <p style="text-align: right; margin:0"> Game</p>
+              </div>
+            </li>
+            <li>
+              <div class="my-wrapper" style="columns: 2;
+                                    -webkit-columns :2;
+                                    -moz-columns :2;
+                                    padding-right: 5px;
+                                    padding-left: 5px;">
+                <p style="margin:0"><b><i>Platform:</i></b></p>
+                <p style="text-align: right; margin:0"> PC/WebGL</p>
+              </div>
+            </li>
+            <li>
+              <div class="my-wrapper" style="columns: 2;
+                                    -webkit-columns :2;
+                                    -moz-columns :2;
+                                    padding-right: 5px;
+                                    padding-left: 5px;">
+                <p style="margin:0"><b><i>Team Size:</i></b></p>
+                <p style="text-align: right; margin:0"> 5</p>
+              </div>
+            </li>
+            <li>
+              <div class="my-wrapper" style="columns: 2;
+                                    -webkit-columns :2;
+                                    -moz-columns :2;
+                                    padding-right: 5px;
+                                    padding-left: 5px;">
+                <p style="margin:0"><b><i>Roles:</i></b></p>
+                <p style="text-align: right; margin:0"> Tech Artist, Level Designer, Sprite Artist</p>
+              </div>
+            </li>
+            <li>
+              <div class="my-wrapper" style="columns: 2;
+                                    -webkit-columns :2;
+                                    -moz-columns :2;
+                                    padding-right: 5px;
+                                    padding-left: 5px;">
+                <p style="margin:0"><b><i>Engine/Software:</i></b></p>
+                <p style="text-align: right; margin:0"> Unity, Krita</p>
+              </div>
+            </li>
+            <li>
+              <div class="my-wrapper" style="columns: 2;
+                                    -webkit-columns :2;
+                                    -moz-columns :2;
+                                    padding-right: 5px;
+                                    padding-left: 5px;">
+                <p style="margin:0"><b><i>Project URL:</i></b></p>
+                <p style="text-align: right; margin:0"> <a href="https://phyrocast.itch.io/hyperaustral" style="color:white;text-underline-color: white">Itch.io</a></p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <!-- Main game description -->
+      <div class="my-article-section">
+        <p>In 2027, Earth was devastated by an unprecedented catastrophe, leaving the surface uninhabitable and forcing the surviving
+          population to seek refuge in airborne arks. This is the premisce of Hyperaustral, a 2D top-down management game where you 
+          lead the crew of your own airship through the catastrophe, and have to learn to manage food, fuel, and your crew's needs and 
+          morale in order to keep flying further and, hopefully, reach some safe haven somewhere towards the south (hnce the name, 
+          <i>Hyper-</i> as beyond, <i>-austral</i> as in southern).
+        </p>
+        <p>The team was comprised of 3 programmers and 2 artists, the latter group of which i was a part of for the first 2/3rds of the
+          project before focusing on programming polish and technical improvements. As a student project, development lasted for around 
+          three months, including the design phase and the showcase/post-mortem phase. While it was a success in terms of grading and 
+          personal improvement for each member of the team, this project was considered a "failure" in terms of game designing by the 
+          team, which will be detailed further down this article.
+        </p>
+      </div>
+
+
+
+      <!-- Article Section -->
+      <div class="my-article-section">
+        <h2 class="section-title" style="margin-left: 1.5em">Gameplay concept</h2>
+        <p>The concept our group settled on was a very ambitious one, much more than we could manage at our respective current skill levels.
+          And because of added issues during development, many of these following conceptual elements of the game had to be scrapped.
+        </p>
+        <br>
+        <h6>Event-driven storyline</h6>
+        <p>Random events, happening at random intervals, give glimpses into the lore of the game, add life to the characters by making the 
+          player become familiar with them, and add challenge to keep the player involved.
+        </p>
+        <p>Some events only mention flavor text, describing happenings within the ship that may not affect directly the gameplay. Some others
+          will give the player tasks to accomplish, machines to fix, choices to make, and can lead to event chains depending on what the 
+          player does. Finally, some much larger events that don't happen at random but at fixed points in the games progression will lead to 
+          more dramatic changes in gameplay and visuals. As a general rule, the higher the impact on the gameplay, the lower the occurence 
+          chance for any given random event.
+        </p>
+        <!-- Inline Image -->
+        <div class="my-article-image-area" style="max-height:none">
+                    <span class="my-image">
+                        <img src="../images/Hyperaustral_Game/Cinematic_Airport.gif" alt="" style="height:200px">
+                        <img src="../images/Hyperaustral_Game/Cinematic_Flying.gif" alt="" style="height:200px">
+                        <img src="../images/Hyperaustral_Game/Cinematic_Contact.gif" alt="" style="height:200px">
+                        <img src="../images/Hyperaustral_Game/Cinematic_Death.gif" alt="" style="height:200px">
+                        <img src="../images/Hyperaustral_Game/Cinematic_Damage.gif" alt="" style="height:200px">
+                    </span>
+          <p>Low animation cinematics for the storyline events</p>
+        </div>
+        <h6>Ressource management</h6>
+        <p>To survive and to progress, the player must meet ressource requirements. Fuel, Raw organic matter, Crew energy and food must be 
+          produced continuously through defined stations to ensure the ship can keep advancing, and that the crew survives. Without fuel, the 
+          ship crashes and the game is lost. Without any crew member left alive, the ship cannot continue operating, and the game is lost.
+        </p>
+        <br>
+        <h6>Lively crew members</h6>
+        <p>For each save-file, the player would be given a random set of crew members, all with individual names, appearences, attributes, and 
+          of course resources. Each crew member can be assigned to specific stations manually to create resources, at the cost of energy and 
+          morale which can be restored in the dormitory, play area, and kitchen. If their needs are not met, they gradually deteriorate until 
+          they take damage, and die. Through random events, characters might become involved in storylines such as mutinies, epidemics, 
+          relationships and others.
+        </p>
+      </div>
+
+      <!-- Article Section -->
+      <div class="my-article-section">
+        <h2 class="section-title" style="margin-left: 1.5em; display: inline-block">Crew members</h2>
+        <!-- <h6 style=" display: inline-block; 
+		                        text-transform: none;
+		                        letter-spacing: 0.1em;">
+          (<a href="#" style="color:var(--hover-color-deep-dark)">Full article : character generator</a>)
+        </h6> --> <!-- for elements with their own article [TODO: full article]  -->
+        <p>Each crew character is independant in its movement and animation. The only way the player has to control them is by assigning them 
+        to specific tasks and rooms: they are autonomous in navigation through Unity's AI Navmesh agents. They have unique names, specialties, 
+        characteristics and stats generated when a new game is begun, that remain until the game is won, or the character dies.</p>
+        <!-- Inline Image -->
+        <div class="my-wrapper" style="display: flex; grid-template-columns: auto auto;">
+          <div class="my-article-image-area">
+                      <span class="my-image">
+                          <img src="../images/Hyperaustral_Game/Chara_Designs.png" alt="" style="height: 200px">
+                          <img src="../images/Hyperaustral_Game/Passenger_Hair_Designs.png" alt="" style="height: 200px">
+                      </span>
+            <p>Character Design concepts</p>
+          </div>
+          <div class="my-article-image-area">
+                      <span class="my-image">
+                          <img src="../images/Hyperaustral_Game/IdleSheet.png" alt="" style="background-color: black; height:400px; margin-left:10px">
+                          <img src="../images/Hyperaustral_Game/WalkSheet.png" alt="" style="background-color: black; height:400px; margin-right:10px">
+                      </span>
+            <p>Character parts animation sheet</p>
+          </div>
+        </div>
+        <!-- Inline Image -->
+        <div class="my-article-image-area">
+            <span class="my-image">
+                <img src="../images/Hyperaustral_Game/Character_Card_Name.png" alt="" style="height: 200px; margin-right:20px">
+                <img src="../images/Hyperaustral_Game/Character_Card_Stats.png" alt="" style="height: 200px; margin-right:20px">
+                <img src="../images/Hyperaustral_Game/Character_Card_Icons.png" alt="" style="height: 200px">
+            </span>
+          <p>Crew member ID card</p>
+        </div>
+        <p>In order to have all crew members available animated, randomly generated, and consistent each time the same save file was launched,
+          the Random Character Creator (<a href="#" style="color:var(--hover-color-light)">Full article</a>) split their visuals into each 
+          different randomizeable parts, assigns the desired color to each, and encodes it as a single integer string which can then be re-read 
+          on loading to generate the very same character visual.
+        </p>
+        <p>Each part of the body is then independently animated according to the character's activity, and moved by the ai agent around the ship's
+          layout.
+        </p>
+      </div>
+
+      <!-- Article Section -->
+      <div class="my-article-section">
+        <h2 class="section-title" style="margin-left: 1.5em; display: inline-block"> Dynamic World Elements </h2>
+        
+        <p>In order to make the world of Hyperaustral feel alive and dynamic, the ship and the world around the ship needed dynamic elements that
+          might change during events, cycle between night and day, or evolve during the progress of the game. As the Tech Artist of the group, 
+          I was the one in charge of creating and integrating these non-gameplay elements.
+        </p>
+        <br>
+        <p><b>Scrolling Background: </b> Under the airship at all times in the games scrolls an endless ocean from the rising waters of the 
+          catastrophe, under a couple layers of clouds. The background is animated through scrolling repeating textures endlessly at varying speed 
+          to give the illusion of depth. Those speeds can then be varied depending on the ship's movement speed to better sell the effect.
+        </p>
+        <!-- Inline Image -->
+        <div class="my-article-image-area" style="display: flow">
+          <div class="my-image">
+            <img src="../images/Hyperaustral_Game/CloudSheet_1_Rotated.png" alt="" style="width:750px">
+          </div>
+          <div class="my-image">
+            <img src="../images/Hyperaustral_Game/sea_BaseColor.png" alt="" style="height:200px; background-color: black">
+            <img src="../images/Hyperaustral_Game/sea_WaveAccents.png" alt="" style="height:200px; background-color: black">
+            <img src="../images/Hyperaustral_Game/sea_WaveBase.png" alt="" style="height:200px; background-color: black">
+          </div>
+          <p>Background textures : clouds (top), sea and waves (bottom)</p>
+        </div>
+        <br>
+        <p><b>Dynamic Weather: </b> Throughout the game, the weather and time of day may shift (sometimes according to pre-scripted events). 
+          To reflect that, I set up systems that trigger smooth color transitions in the background depending on the set weather. Originally,
+          the ship's hull was also meant to change color, but our tutor's feedback had us keep it constant.
+        </p>
+        <!-- Inline Image -->
+        <div class="my-article-image-area">
+                    <span class="my-image">
+                        <img src="../images/Hyperaustral_Game/Dynamic_Sky_Default.png" alt="" style="height:200px">
+                        <img src="../images/Hyperaustral_Game/Dynamic_Sky_Sunset.png" alt="" style="height:200px">
+                        <img src="../images/Hyperaustral_Game/Dynamic_Sky_Othership.png" alt="" style="height:200px">
+                    </span>
+          <p> Dynamic weather system (in order: cloudy, sunset, daytime)</p>
+        </div>
+        <br>
+        <p><b>Broken Machinery: </b> As part of the random events system driving the game, part of the environment may break down. Machines, 
+          doors, appliances, and ship engines. As of the current version of the game, only the reactors were able to break down (visually), 
+          a feature only used in case of critical ship damage (none of the corresponding events had been implemented). In the case of the 
+          engines, they would darken, shake, and emit dark smoke and fire particles to indicate a dysfunction.
+        </p>
+        <!-- Inline Image -->
+        <div class="my-article-image-area">
+                    <span class="my-image">
+                        <img src="../images/Hyperaustral_Game/Reactor_breakdown.png" alt="" style="height:200px">
+                    </span>
+          <p> Full Reactor malfunction</p>
+        </div>
+      </div>
+
+      <!-- Article Section -->
+      <div class="my-article-section">
+        <h2 class="section-title" style="margin-left: 1.5em; display: inline-block">Ship Layout </h2>
+        <h6 style=" display: inline-block; 
+		                        text-transform: none;
+		                        letter-spacing: 0.1em;">
+          (<a href="#" style="color:var(--hover-color-deep-dark)">Full article</a>)
+        </h6> <!-- for elements with their own article -->
+        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+          Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien
+          risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
+        </p>
+        <br>
+        <!-- Inline Image -->
+        <div class="my-article-image-area">
+                    <span class="my-image">
+                        <img src="../images/pic01.jpg" alt="">
+                    </span>
+          <p> Image Description</p>
+        </div>
+      </div>
+
+      <!-- Article Section -->
+      <div class="my-article-section">
+        <h2 class="section-title" style="margin-left: 1.5em; display: inline-block">Post Mortem </h2>
+        <h6 style=" display: inline-block; 
+		                        text-transform: none;
+		                        letter-spacing: 0.1em;">
+          (<a href="#" style="color:var(--hover-color-deep-dark)">Full article</a>)
+        </h6> <!-- for elements with their own article -->
+        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+          Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien
+          risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
+        </p>
+        <br>
+        <!-- Inline Image -->
+        <div class="my-article-image-area">
+                    <span class="my-image">
+                        <img src="../images/pic01.jpg" alt="">
+                    </span>
+          <p> Image Description</p>
+        </div>
+      </div>
+      
+      <!-- Related Articles -->
+      <div class="my-article-section">
+        <h2 class="section-title" style="margin-left: 1.5em; display: inline-block; margin-bottom: 1em;"> Related Articles</h2>
+
+        <div class="my-article-section" style="background-color: rgba(0,0,0,.2); align-content: center">
+          <section class="my-tiles">
+
+            <article class="black quarter">
+                                
+                                <span class="image">
+                                    <img class="preview" src="../images/pic01.jpg" alt="" />
+                                    <img class="showcase" src="../images/pic01.jpg" alt="" />
+                                </span>
+
+              <a href="DefaultArticle.html">
+                <h2>Magna</h2>
+                <div class="content">
+                  <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="black quarter">
+                                
+                                <span class="image">
+                                    <img class="preview" src="../images/pic01.jpg" alt="" />
+                                    <img class="showcase" src="../images/pic01.jpg" alt="" />
+                                </span>
+
+              <a href="DefaultArticle.html">
+                <h2>Magna</h2>
+                <div class="content">
+                  <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="black quarter">
+                                
+                                <span class="image">
+                                    <img class="preview" src="../images/pic01.jpg" alt="" />
+                                    <img class="showcase" src="../images/pic01.jpg" alt="" />
+                                </span>
+
+              <a href="DefaultArticle.html">
+                <h2>Magna</h2>
+                <div class="content">
+                  <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                </div>
+              </a>
+            </article>
+
+          </section>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <!-- Footer --> <!-- keep? -->
+  <!--
+  <footer id="footer" style="background-color: var(--site-background-color)">
+      <div class="inner">
+          <section>
+              <h2>Get in touch</h2>
+              <form method="post" action="#">
+                  <div class="fields">
+                      <div class="field half">
+                          <input type="text" name="name" id="name" placeholder="Name"/>
+                      </div>
+                      <div class="field half">
+                          <input type="email" name="email" id="email" placeholder="Email" />
+                      </div>
+                      <div class="field">
+                          <textarea name="message" id="message" placeholder="Message"></textarea>
+                      </div>
+                  </div>
+                  <ul class="actions">
+                      <li><input type="submit" value="Send" class="primary" /></li>
+                  </ul>
+              </form>
+          </section>
+          <section>
+              <h2>Follow</h2>
+              <ul class="icons">
+                  <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                  <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                  <li><a href="#" class="icon brands style2 fa-itch-io"><span class="label">Dribbble</span></a></li>
+                  <li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                  <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+                  <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+              </ul>
+          </section>
+          <ul class="copyright">
+              <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          </ul>
+      </div>
+  </footer>
+  -->
+
+</div>
+
+
+
+
+<!-- Scripts -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>
