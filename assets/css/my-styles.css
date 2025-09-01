@@ -115,6 +115,14 @@ a > .my-title {
     padding: 15px;
 }
 
+.my-article-section > img  {
+    max-width: 100%;
+}
+
+.my-image > img  {
+    max-width: 100%;
+}
+
 /*===*/
 /*greffes*/
 
