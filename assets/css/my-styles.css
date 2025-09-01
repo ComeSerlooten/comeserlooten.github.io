@@ -219,6 +219,10 @@ body:not(.is-touch) .my-tiles article:hover > .image > .preview {
     width: calc(25% - 2em);
 }
 
+.my-tiles article.minsized-200 {
+    min-width: 200px;
+}
+
 /* imports */
 
 /*Tiles copy to My */
@@ -234,6 +238,7 @@ body:not(.is-touch) .my-tiles article:hover > .image > .preview {
     flex-wrap: wrap;
     postiion: relative;
     margin: -.5em;
+    justify-content: space-between;
 }
 
 .my-tiles article {
