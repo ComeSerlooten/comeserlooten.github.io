@@ -385,41 +385,86 @@
 		                        letter-spacing: 0.1em;">
           (<a href="#" style="color:var(--hover-color-deep-dark)">Full article</a>)
         </h6> <!-- for elements with their own article -->
-        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
-          Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien
-          risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
+        <p>As artist and asset integrator, I was also in charge of designing the ship's layout, as well as creating and placing all the 
+          decorations. For that purpose, I designed a wide set of props to spread around the ship, from furniture to tools and rubbish, that 
+          would make the ship feel "lived in". Additionally, to reflect both the gameplay based on work stations and how an airship like that 
+          might be organised, the ship is split into distinct rooms, each with a different purpose. 
         </p>
-        <br>
         <!-- Inline Image -->
         <div class="my-article-image-area">
                     <span class="my-image">
-                        <img src="../images/pic01.jpg" alt="">
+                        <img src="../images/Hyperaustral_Game/Ship_Layout_Overlay.png" alt="" style="max-width: 70%; max-height: 450px">
                     </span>
-          <p> Image Description</p>
+          <p> Room layout of the ship</p>
         </div>
+        <p>In the above picture, each room is marked in a separate color, in an overlay display available in-game by a toggle button in the UI. 
+        Using this display, the player can better visualize the secions of the ship which is especially useful during area-specific events.</p>
+        <br>
+        <p>To add a bit more immersion and character to the ship, each room has its own style, type of decorations, and overall color scheme. 
+          This way, the player has an easier time differenciating the room instinctively and the ship feels more natural. By adding in organic
+          untidiness and solid furniture the characters need to navigate around, each room feels like it has substance and actually exists in
+          the world of the game.
+        </p>
+        <!-- Inline Image -->
+        <div class="my-article-image-area">
+                    <span class="my-image" style="display:flex; flex-flow:row; justify-content: center; gap:10px">
+                        <img src="../images/Hyperaustral_Game/Decorations_1.png" alt="" style="height:350px">
+                        <img src="../images/Hyperaustral_Game/Decorations_2.png" alt="" style="height:350px">
+                        <img src="../images/Hyperaustral_Game/Decorations_3.png" alt="" style="height:350px">
+                        <img src="../images/Hyperaustral_Game/Decorations_4.png" alt="" style="height:350px">
+                        <img src="../images/Hyperaustral_Game/Decorations_5.png" alt="" style="height:350px">
+                    </span>
+          <p> Views of different rooms from the ship and their decoration</p>
+        </div>
+        
       </div>
 
       <!-- Article Section -->
       <div class="my-article-section">
         <h2 class="section-title" style="margin-left: 1.5em; display: inline-block">Post Mortem </h2>
-        <h6 style=" display: inline-block; 
-		                        text-transform: none;
-		                        letter-spacing: 0.1em;">
-          (<a href="#" style="color:var(--hover-color-deep-dark)">Full article</a>)
-        </h6> <!-- for elements with their own article -->
-        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
-          Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien
-          risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
+        
+        <p>As mentionned in the introduction, this project was considered by the team to be a failure for many reasons:
         </p>
-        <br>
-        <!-- Inline Image -->
-        <div class="my-article-image-area">
-                    <span class="my-image">
-                        <img src="../images/pic01.jpg" alt="">
-                    </span>
-          <p> Image Description</p>
+        <div class="my-wrapper" style="margin-left:20px; margin-right: 20px;">
+          <p><b>Overscoping:</b> With the size of our team, our initial motivation, and the perceived difficulty of our project, 
+          Hyperausrtral ended up being vastly overscoped. Most of the features we were excited about in the conception phase 
+          weren't as gameplay-essential to have a game running and therefore had to be cut, leaving some sections of gameplay 
+          feeling lackluster.</p>
+          
+          <p><b>Time Management:</b> While we had a few months to work on this game, we perceived this as much longer than it 
+          was. The concept and prototype phases dragged on too long, and with a member of the team having to drop out mid-development,
+          we ended up being rushed for time at the end which meant less qualitative code, rushed features, and most importantly much 
+          less time to spend testing, debugging, and reworking.</p>
+          
+          <p><b>Failed Gameplay Loop:</b> As a consequence of both the previous points, our game ultimately just wasn't fun to play. 
+          The game felt like a burden, constantly trying to maintain a balance without any "reward", the objectives felt too distant,
+          and the elements meant to add variety, fun, and challenge to a peaceful game ended up feeling like a constant pressure that 
+          simply didn't make this an enjoyable game to play in its current state.</p>
         </div>
+        <br>
+        
+        <p>Despite these negative points from a gameplay point of view, there were some definitive sucesses to highlight:</p>
+        <div class="my-wrapper" style="margin-left:20px; margin-right: 20px;">
+          <p><b>Organisation and Task management:</b> Compared to many student projects, this one had very clear and efficient management.
+          <br> With weekly reunions and progress updates from each developer, it was easy to follow the overall situation of the game and 
+          tell who worked on what. Efforts were also made in the "openness" of the code, allowing everyone to know exactly how each section
+          worked, meaning there were very few "black box" sections of code and the structure remained flexible. Finally, the added following
+          of strict SCRUM methodology as well as pre-agreed upon code and naming convention made for an especially clear project.</p>
+          <p><b>Reusable Segments:</b> With improved visibility on the entire project, as well as sections developed with the express 
+          intent of being independant from each other while working together, many sections of the game can be reused in different projects : 
+          the random character creator, AI navigation system, event system, as well as of course the large bank of sprites for the interior 
+          and tilemap.</p>
+        </div>
+        <br>
+        <br>
+        <h4>Future of the project</h4>
+        <p>With the great structure already present of Hyperaustral, the project is currently awaiting a revival. By rebuilding it from the 
+        ground up and revisiting the concept, I hope to address the issues of the current game and make it into what it could have become.
+        <br>
+        Current revival project progress: [<i>To Be Determined</i>]</p>
+        
       </div>
+      
       
       <!-- Related Articles -->
       <div class="my-article-section">
