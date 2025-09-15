@@ -1,0 +1,582 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+<head>
+  <title>Côme Serlooten - Scuba Looter</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+  <link rel="stylesheet" href="../assets/css/my-styles.css" />
+  <link rel="icon" type="image/x-icon" href="../images/ScubaLooter_Game/GameIcon.png">
+
+</head>
+
+<!-- Page Top and Bottom -->
+<div  class = "my-header">
+  <div style="text-align: left; height:100%;  display: flex; margin-left: 25px" >
+    <a href="../index.html" style="color: rgb(125,125,125); margin-top: auto; margin-bottom: auto;">Home</a>
+  </div>
+</div>
+<div class = "my-footer">
+  <div style="display: grid; margin-top: auto; margin-bottom: auto; padding: 0 1em; grid-template-rows: auto">
+    <ul class="icons" style="margin:0">
+      <li style="margin: 0 5px 0 5px ;padding: 0"><a href="https://www.facebook.com/profile.php?id=100006138917291" class="icon brands style2 fa-facebook-f fa-xs"><span class="label">Facebook</span></a></li>
+      <li style="margin: 0 5px ;padding: 0"><a href="https://www.instagram.com/comeserlooten/" class="icon brands style2 fa-instagram fa-xs"><span class="label">Instagram</span></a></li>
+      <li style="margin: 0 5px ;padding: 0"><a href="https://phyrocast.itch.io/" class="icon brands style2 fa-itch-io fa-xs"><span class="label">Itch.io</span></a></li>
+      <li style="margin: 0 5px ;padding: 0"><a href="https://github.com/ComeSerlooten/" class="icon brands style2 fa-github fa-xs"><span class="label">GitHub</span></a></li>
+      <li style="margin: 0 5px ;padding: 0"><a class="icon solid style2 fa-phone fa-xs">
+        <button onclick="CopyToClipboardPhone()" class="label">Phone</button>
+        <div class="my-tooltip">
+          <div class="my-tooltip-text" style="margin-top:-5px; height: 25px">
+            <p style="margin-top:-2px; height:25px">copy:+33695707553</p>
+          </div>
+        </div>
+      </a></li>
+      <li style="margin: 0 5px 0 5px ;padding: 0"><a class="icon solid style2 fa-envelope fa-xs">
+        <button onclick="CopyToClipboardEmail()" class="label">Email</button>
+        <div class="my-tooltip">
+          <div class="my-tooltip-text" style="margin-top:-5px; height: 25px">
+            <p style="margin-top:-2px; height:25px">copy:c.serloot@gmail.com</p>
+          </div>
+        </div>
+      </a></li>
+    </ul>
+  </div>
+
+  <div style="text-align: right; width:30%; padding : 0 2em" >
+    <a href="#page-top" style="color: rgb(125,125,125)">Scroll to top</a>
+  </div>
+</div>
+
+<body class="is-preload">
+<!-- Wrapper -->
+<div class="my-wrapper" id="wrapper" style="box-sizing: border-box; 
+                                                    width: 100%; 
+                                                    height: auto; 
+                                                    background-color: var(--site-background-color)">
+
+  <!-- head fixed spacer -->
+  <div id="page-top" class="my-spacer" style="height: 50px"></div> <!-- head fixed spacer -->
+
+
+
+  <!-- Header Logo -->
+  <header id="header">
+    <div class="inner">
+
+      <!-- Logo -->
+      <a href="../index.html" class="logo">                <!--style="-webkit-filter: invert()"-->
+        <span class="symbol">
+                            <img src="../images/logo.svg" alt="">
+                        </span>
+        <span class="my-title">Côme Serlooten</span>
+      </a>
+
+      <!-- Nav -->
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Menu -->
+  <nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../pages/Spotlight_Projects.html">Spotlight Projects</a></li>
+      <li><a href="../pages/Games.html">Games</a></li>
+      <li><a href="../pages/Fragments.html">Fragments</a></li>
+      <li><a href="../pages/Arts.html">Arts</a></li>
+      <li><a href="../pages/Concepts.html">Concepts</a></li>
+      <!--<li><a href="../pages/Other.html">Others</a></li>-->
+      <li><a href="../pages/CV_Resume.html">CV/Resume</a></li>
+      <li><a href="../pages/Credits.html">Credits</a></li>
+      <!--<li><a href="../elements.html">Elements</a></li>--> <!-- To Hide -->
+    </ul>
+  </nav>
+
+  <!-- Main -->
+  <div id="main" style="overflow: hidden;">
+    <div class="inner">
+      <!-- Title -->
+      <h1 style="margin-left: 2.5em; ; margin-bottom: 5px; display: inline-block">Scuba Looter</h1>
+      <div class="my-image" style="height:2.5em; display: inline-block; margin-left: 1em">
+        <img src="../images/ScubaLooter_Game/GameIcon.png" alt="" style="height:2.5em" />
+      </div> <!-- label icon -->
+      <p style="margin-left: 2.5em; margin-bottom: 25px;">A roguelite Diver exploration game - Pixel Game Jam 2024</p>
+      
+      <!-- Main Image -->
+      <div class="my-section" style="width:110%;
+                                                height: 500px; 
+                                                background-color: rgba(0,0,0,0.5); 
+                                                overflow: hidden; 
+                                                display: block; 
+                                                padding: 0;
+                                                margin: 0 -5% .5em -5%;
+                                                border-radius: 10px">
+        <div class="my-image" style="height: 100%; width:100%;
+                                                    display: block;                                
+                                                    margin-left: 50%">
+          <!-- <img src="../images/DisobeyProtocol_Game/Title_scaled.png" alt="" style="height: 12%; 
+                                                                    transform: translateX(-50%);
+                                                                    -webkit-transform: translateX(-50%);" /> -->
+          <iframe width="100%" height="100%"
+                  src="https://www.youtube.com/embed/5_jbi92_OJo"
+                  style="width:100%;
+                          transform: translateX(-50%);
+                          -webkit-transform: translateX(-50%);">
+          </iframe>
+
+        </div>
+      </div>
+
+      <!-- Title image -->
+      <div class="my-article-section">
+        <div class="my-article-image-area">
+                        <span class="my-image">
+                            <img src="../images/ScubaLooter_Game/Title.png" alt="" style="width: 30%">
+                        </span>
+        </div>
+      </div>
+
+      <!-- Game id card -->
+      <div class="my-article-section">
+        <h2 class="section-title" style="margin-left: 1.5em; display: inline-block">Project ID Card:</h2>
+        <div class="my-article-section">
+          <ul style=" columns: 2;
+                                    -webkit-columns :2;
+                                    -moz-columns :2;
+                                    list-style: none; 
+                                    margin-bottom: 10px">
+            <li>
+              <div class="my-wrapper" style="columns: 2;
+                                    -webkit-columns :2;
+                                    -moz-columns :2;
+                                    padding-right: 5px;
+                                    padding-left: 5px;">
+                <p style="margin:0"><b><i>Project Type:</i></b></p>
+                <p style="text-align: right; margin:0"> Game</p>
+              </div>
+            </li>
+            <li>
+              <div class="my-wrapper" style="columns: 2;
+                                    -webkit-columns :2;
+                                    -moz-columns :2;
+                                    padding-right: 5px;
+                                    padding-left: 5px;">
+                <p style="margin:0"><b><i>Platform:</i></b></p>
+                <p style="text-align: right; margin:0"> PC/WebGL</p>
+              </div>
+            </li>
+            <li>
+              <div class="my-wrapper" style="columns: 2;
+                                    -webkit-columns :2;
+                                    -moz-columns :2;
+                                    padding-right: 5px;
+                                    padding-left: 5px;">
+                <p style="margin:0"><b><i>Team Size:</i></b></p>
+                <p style="text-align: right; margin:0"> Solo</p>
+              </div>
+            </li>
+            <li>
+              <div class="my-wrapper" style="columns: 2;
+                                    -webkit-columns :2;
+                                    -moz-columns :2;
+                                    padding-right: 5px;
+                                    padding-left: 5px;">
+                <p style="margin:0"><b><i>Role:</i></b></p>
+                <p style="text-align: right; margin:0"> Solo Developer</p>
+              </div>
+            </li>
+            <li>
+              <div class="my-wrapper" style="columns: 2;
+                                    -webkit-columns :2;
+                                    -moz-columns :2;
+                                    padding-right: 5px;
+                                    padding-left: 5px;">
+                <p style="margin:0"><b><i>Engine/Software:</i></b></p>
+                <p style="text-align: right; margin:0"> Unity</p>
+              </div>
+            </li>
+            <li>
+              <div class="my-wrapper" style="columns: 2;
+                                    -webkit-columns :2;
+                                    -moz-columns :2;
+                                    padding-right: 5px;
+                                    padding-left: 5px;">
+                <p style="margin:0"><b><i>Project URL:</i></b></p>
+                <p style="text-align: right; margin:0"> <a href="https://phyrocast.itch.io/scubalooter-standalone" style="color:white;text-underline-color: white">Itch.io</a></p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <!-- Main game description -->
+      <div class="my-article-section">
+        <p>Scuba Looter is an endless exploration game, where the player controls a scuba diver going deeper and deeper on the sea floor to
+          collect precious pearls. Equipped with their trusty bubble-gun, they must manage their oxygen reserves, carefully navigate between
+          corals enemies, and pick up as many pearls as they can to improve their gear once they make it back to the surface.
+        </p>
+        <p>Following the simple theme "Aqua" for the Pixel Game Jam 2024, I wanted to challenge myself a little more for this event with 
+          procedural generation. Choosing to interpret the theme with an Underwater aspect, I settled on this scuba diving concept with an
+          organic-looking procedural dungeon the player would be dropped in. Each hit taken reduces the player's oxygen reserve and therefore 
+          reduces the time they have left before being dragged back to the surface.
+        </p>
+      </div>
+
+      <!-- Article Section -->
+      <div class="my-article-section">
+        <h2 class="section-title" style="margin-left: 1.5em; display: inline-block">Gameplay Elements </h2>
+
+        <p><b>Player:</b> can walk around, sprint, and shoot a bubble-gun in the direction of the mouse;</p>
+        <p><b>Oxygen:</b> serving as both the player's health, it depletes over time, limiting the possible length of a run;</p>
+        <p><b>Stamina:</b> shared between running and shooting, the player must manage thier stamina correctly to not become stuck in a 
+        hard position;</p>
+        <p><b>Collectables:</b> either pearls or oxygen bubbles. Pearls will be kept on death, and bubbles replenish a little oxygen;</p>
+        <p><b>Enemies and obstacles:</b> randomly generated in each room, they can drop collectables and might damage or slow the player;</p>
+        <p><b>Procedural Dungeon:</b> each level is entirely generated procedurally, from the room layout to the placement of walls and 
+          decoration;</p>
+        <p><b>Permanent Upgrades:</b> after each run, the player brings back the pealrs they collected and can purchase upgrades to boost
+        their stats for the next run</p>
+        <br>
+        <!-- Inline Image -->
+        <div class="my-article-image-area">
+          <div class="my-wrapper" style="display: flex; justify-content: center">
+                                <span class="my-image" style="display: flex; flex-flow: row; flex-wrap: wrap; justify-content:center; gap:10px">
+                                    <img src="../images/ScubaLooter_Game/GameCapt1.PNG" alt="" style="height:250px">
+                                    <img src="../images/ScubaLooter_Game/GameCapt2.PNG" alt="" style="height:250px">
+                                    <img src="../images/ScubaLooter_Game/MenuCapt1.PNG" alt="" style="height:250px">
+                                </span>
+          </div>
+          <p>Captures from the game</p>
+        </div>
+
+      </div>
+
+      <!-- Article Section -->
+      <div class="my-article-section">
+        <h2 class="section-title" style="margin-left: 1.5em; display: inline-block">Close up on the enemies </h2>
+        <!-- Enemy closeup -->
+        <div class="my-article-section" style="display:grid; grid-template-columns: 30% 70%">
+          <!-- Inline Image -->
+          <div class="my-article-image-area" style=" width:100%">
+            <h4 style="color:white"> Crab</h4>
+            <span class="my-image" style="width:100%; image-rendering: pixelated;">
+                                <img src="../images/ScubaLooter_Game/Crab_Solo.png" alt="" style="width:50%">
+                            </span>
+          </div>
+          <div class="my-wrapper">
+            <br>
+            <p><b>Hitpoints:</b>&nbsp; 3</p>
+            <p><b>Movements:</b>&nbsp; Walks sideways until it hits a wall, and then walks the opposite way</p>
+            <p><b>Attack:</b>&nbsp; Shoots bubbles forward and back at set time intervals</p>
+            <br>
+          </div>
+        </div>
+        <!-- Enemy closeup -->
+        <div class="my-article-section" style="display:grid; grid-template-columns: 70% 30%">
+          <div class="my-wrapper">
+            <br>
+            <p><b>Hitpoints:</b>&nbsp; 3</p>
+            <p><b>Movements:</b>&nbsp; Roams around a certain point and stops when the player is in range</p>
+            <p><b>Attack:</b>&nbsp; When the player is in range, turns towards them and shoots</p>
+            <br>
+          </div>
+          <!-- Inline Image -->
+          <div class="my-article-image-area" style=" width:100%">
+            <h4 style="color:white"> Squid</h4>
+            <span class="my-image" style="width:100%; image-rendering: pixelated">
+                                <img src="../images/ScubaLooter_Game/Squid_Solo.png" alt="" style="width:50%">
+                            </span>
+          </div>
+        </div>
+        <!-- Enemy closeup -->
+        <div class="my-article-section" style="display:grid; grid-template-columns: 30% 70%">
+          <!-- Inline Image -->
+          <div class="my-article-image-area" style=" width:100%">
+            <h4 style="color:white"> Urchin</h4>
+            <span class="my-image" style="width:100%">
+                <img src="../images/ScubaLooter_Game/Urchin_Solo.png" alt="" style="width:100%; image-rendering: pixelated">
+            </span>
+          </div>
+          <div class="my-wrapper">
+            <br>
+            <p><b>Hitpoints:</b>&nbsp; 4</p>
+            <p><b>Movements:</b>&nbsp; None</p>
+            <p><b>Attack:</b>&nbsp; Invulnerable when the player is too far, shoots in all cardinal direction when they are close enough</p>
+            <br>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article Section -->
+      <div class="my-article-section">
+        <h2 class="section-title" style="margin-left: 1.5em; display: inline-block">Procedural Dungeon </h2>
+        <h6 style=" display: inline-block; 
+		                        text-transform: none;
+		                        letter-spacing: 0.1em;">
+          (<a href="../articles/Missing_Article.html" style="color:var(--hover-color-deep-dark)">Full article</a>)
+        </h6> <!-- for elements with their own article -->
+        <p>At the core of Scuba Looter's gameplay, the dungeon is entirely generated and populated procedurally. Having never developed any 
+          procedural generation into any game before, this was a very big undertaking for me that taught me a lot.
+        </p>
+        <p>The dungeons get generated in a simple sequence:
+        </p>
+        <ul style="padding:0 50px">
+          <li><p>Partition the available area into rooms fitting minimum and maximum sizes;</p></li>
+          <li><p>Connect them with corridors to make a main path and branches;</p></li>
+          <li><p>Edit the edges to feel organic rather than straight;</p></li>
+        </ul>
+
+        <!-- Inline Image -->
+        <div class="my-article-image-area">
+          <div class="my-wrapper" style="display: flex; justify-content: center">
+                                <span class="my-image" style="display: flex; flex-flow: row; flex-wrap: wrap; justify-content:center; gap:10px">
+                                    <img src="../images/ScubaLooter_Game/DungeonEx_1.png" alt="" style="height:350px">
+                                    <img src="../images/ScubaLooter_Game/DungeonEx_2.png" alt="" style="height:350px">
+                                    <img src="../images/ScubaLooter_Game/DungeonEx_3.png" alt="" style="height:350px">
+                                </span>
+          </div>
+          <p>Generated organic rooms</p>
+        </div>
+        
+        <ul style="padding:0 50px">
+          <li><p>Populate the rooms with enemies, decors, and obstacles;</p></li>
+          <li><p>Color the tiles according to the depth and add the exit hole.</p></li>
+        </ul>
+        <!-- Inline Image -->
+        <div class="my-article-image-area">
+          <div class="my-wrapper" style="display: flex; justify-content: center">
+                                <span class="my-image" style="display: flex; flex-flow: row; flex-wrap: wrap; justify-content:center; gap:10px">
+                                    <img src="../images/ScubaLooter_Game/Dungeon_PopulatedEx_1.png" alt="" style="height:350px">
+                                    <img src="../images/ScubaLooter_Game/Dungeon_PopulatedEx_2.png" alt="" style="height:350px">
+                                    <img src="../images/ScubaLooter_Game/Dungeon_PopulatedEx_3.png" alt="" style="height:350px">
+                                </span>
+          </div>
+          <p>Rooms after getting populated</p>
+        </div>
+        <br>
+        <p>This process allows for a unique look to every new generation and very little repetition, which is good for replayability. However,
+        the current state of this generator allowed for some rare cases of enemies being stuck or out of reach, and did not allow for pre-made
+        special rooms to be implemented, for example for bosses, merchants, or chest rooms. Furthermore, the connexion between rooms was simple,
+          and unreliable. It was improved upon in newer versions of the generator, available in the full article on Procedural Dungeons.</p>
+      </div>
+
+      <!-- Article Section -->
+      <div class="my-article-section">
+        <h2 class="section-title" style="margin-left: 1.5em; display: inline-block">Upgrades Shop </h2>
+        
+        <p>To fit the rules of a roguelite, as well as to give purpose to the player's repeated expeditions, the game is equipped with a 
+          persistant upgrades shop. Through it, the player may put to use the pearl they collect down in the depths to upgrade their stats. 
+        </p>
+        <br>
+        <!-- Inline Image -->
+        <div class="my-article-image-area">
+          <div class="my-wrapper" style="display: flex; justify-content: center">
+                <span class="my-image" style="display: flex; flex-flow: row; flex-wrap: wrap; justify-content:center; gap:10px">
+                    <img src="../images/ScubaLooter_Game/MenuCapt2.PNG" alt="" style ="max-height: 450px;">
+                </span>
+          </div>
+          <p> UI of the Upgrades Shop</p>
+        </div>
+        <p>Each upgrade has a cost, increasing with every purchase of this instance of upgrade, and purchasing it will be saved for the next
+        time the game is launched.</p>
+        <p>Here are the current available upgrades and their effect :</p>
+        <div class="my-wrapper" style="margin-left:50px; margin-right:50px">
+            <ul>
+              <li><p><b>Firing Delay: </b> Reduces the minimum delay between each bullet;</p></li>
+              <li><p><b>Max Stamina: </b> Increases the maximum amount of stamina available;</p></li>
+              <li><p><b>Start Oxygen: </b> The player will have a larger amount of oxygen when beginning;</p></li>
+              <li><p><b>Bullet Damage: </b> Each bullet does more damage to enemies on hit;</p></li>
+              <li><p><b>Attack Stamina Cost: </b> Each bullet costs less stamina to fire;</p></li>
+              <li><p><b>Stamina Replenish Rate: </b> Stamina restores faster overtime;</p></li>
+              <li><p><b>Pearl per Depth: </b> The amount of bonus pearl once clearing a level increases;</p></li>
+              <li><p><b>Movement Speed: </b> The player moves faster;</p></li>
+            </ul>
+        </div>
+      </div>
+      
+      <!-- Article Section -->
+      <div class="my-article-section">
+        <h2 class="section-title" style="margin-left: 1.5em; display: inline-block">Polish and Effects </h2>
+        
+        <p>A key element of this project has been the addition of polish effects to increase the player's immersion, and make the game in its
+          entirety feel more alive. These additions, while mainly visual, make sure that the game feels much more polished and completed.</p>
+        <br>
+        <!-- Inline Image -->
+        <div class="my-article-image-area">
+          <div class="my-wrapper" style="display: flex; justify-content: center">
+                                <span class="my-image" style="display: flex; flex-flow: row; flex-wrap: wrap; justify-content:center; gap:10px">
+                                    <img src="../images/ScubaLooter_Game/Scuba_Menu_Loop.gif" alt="" style="height:400px">
+                                </span>
+          </div>
+          <p> Menu tilting effect (sped up)</p>
+        </div>
+        <p>The first effect the player encounters is in the main menu, as shown above. As the player is a diver going back and forth in their
+        expeditions, it makes sense that their base of operations would be their workshop aboard a ship. Hence, the menu slowly rocks from left
+          to right to mimic the rocking of a boat, and the ui elements, copying the elements of a workshop with tools, maps, and papers, tilt 
+          accordingly as if still subjected to gravity. The effect is sold by keeping the elements upright while the decor around them rotates,
+          which similarily works as well to make the water in the glasses shift as well.
+        </p>
+        <br>
+        <!-- Inline Image -->
+        <div class="my-article-image-area">
+          <div class="my-wrapper" style="display: flex; justify-content: center">
+                                <span class="my-image" style="display: flex; flex-flow: row; flex-wrap: wrap; justify-content:center; gap:10px">
+                                    <img src="../images/ScubaLooter_Game/Scuba_ShootLoop.gif" alt="" style="height:400px">
+                                </span>
+          </div>
+          <p> Bubble effects in game</p>
+        </div>
+        <p>As the main game happens underwater, I decided to ise bubbles as the main particles to attract the eye of the player. Acting as
+        both highlights and immersion, the bubbles appear as trails for projectiles, in bursts when the charater "breathes", or when an 
+          object gets destroyed or opened (such as conches, corals, or the end of the level). </p>
+        <br>
+        <!-- Inline Image -->
+        <div class="my-article-image-area">
+          <div class="my-wrapper" style="display: flex; justify-content: center">
+                                <span class="my-image" style="display: flex; flex-flow: row; flex-wrap: wrap; justify-content:center; gap:10px">
+                                    <img src="../images/ScubaLooter_Game/DepthCapt1.PNG" alt="" style="height:250px">
+                                    <img src="../images/ScubaLooter_Game/DepthCapt2.PNG" alt="" style="height:250px">
+                                    <img src="../images/ScubaLooter_Game/DepthCapt3.PNG" alt="" style="height:250px">
+                                </span>
+          </div>
+          <p> Color of the Dungeon environment at different depths</p>
+        </div>
+        <p>
+          Finally, the deeper the player goes the darker the environment gets. Reflecting the way less and less light reaches the bottom of
+          the sea floor when its deep, this gives both visual cues to the player's depth as well as visual variety. Furthermore, with early 
+          tests showing that deep levels became hard to navigate with the added pressure of low oxygen. By darkening the color of the walls 
+          and ground, the other elements like enemies and obstacles (which do not change color) become more clearly visible and easier to 
+          spot.
+        </p>
+      </div>
+
+      <!-- Related Articles -->
+      <div class="my-article-section">
+        <h2 class="section-title" style="margin-left: 1.5em; display: inline-block; margin-bottom: 1em;"> Related Articles </h2>
+
+        <div class="my-article-section" style="background-color: rgba(0,0,0,.2); align-content: center">
+          <section class="my-tiles">
+
+            <article class="black quarter minsized-200">
+                                
+                                <span class="image">
+                                    <img class="preview" src="../images/pic01.jpg" alt="" />
+                                    <img class="showcase" src="../images/pic01.jpg" alt="" />
+                                </span>
+
+              <a href="../articles/Missing_Article.html">
+                <h2>Magna</h2>
+                <div class="content">
+                  <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="black quarter minsized-200">
+                                
+                                <span class="image">
+                                    <img class="preview" src="../images/pic01.jpg" alt="" />
+                                    <img class="showcase" src="../images/pic01.jpg" alt="" />
+                                </span>
+
+              <a href="../articles/Missing_Article.html">
+                <h2>Magna</h2>
+                <div class="content">
+                  <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="black quarter minsized-200">
+                                
+                                <span class="image">
+                                    <img class="preview" src="../images/pic01.jpg" alt="" />
+                                    <img class="showcase" src="../images/pic01.jpg" alt="" />
+                                </span>
+
+              <a href="../articles/Missing_Article.html">
+                <h2>Magna</h2>
+                <div class="content">
+                  <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                </div>
+              </a>
+            </article>
+
+          </section>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <!-- Footer --> <!-- keep? -->
+  <!--
+  <footer id="footer" style="background-color: var(--site-background-color)">
+      <div class="inner">
+          <section>
+              <h2>Get in touch</h2>
+              <form method="post" action="#">
+                  <div class="fields">
+                      <div class="field half">
+                          <input type="text" name="name" id="name" placeholder="Name"/>
+                      </div>
+                      <div class="field half">
+                          <input type="email" name="email" id="email" placeholder="Email" />
+                      </div>
+                      <div class="field">
+                          <textarea name="message" id="message" placeholder="Message"></textarea>
+                      </div>
+                  </div>
+                  <ul class="actions">
+                      <li><input type="submit" value="Send" class="primary" /></li>
+                  </ul>
+              </form>
+          </section>
+          <section>
+              <h2>Follow</h2>
+              <ul class="icons">
+                  <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                  <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                  <li><a href="#" class="icon brands style2 fa-itch-io"><span class="label">Dribbble</span></a></li>
+                  <li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                  <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+                  <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+              </ul>
+          </section>
+          <ul class="copyright">
+              <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          </ul>
+      </div>
+  </footer>
+  -->
+
+</div>
+
+
+
+
+<!-- Scripts -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>
